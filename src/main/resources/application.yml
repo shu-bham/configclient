@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true
+#        todo: check kafka binder config
+#    stream:
+#      kafka:
+#        binder:
+#          zkNodes: localhost:2181
+#          brokers: localhost:9092
+#          zkSessionTimeout: 6000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # expose refresh endpoint from actuator
+        include: "*"

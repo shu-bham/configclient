@@ -15,10 +15,3 @@ spring:
       uri: http://localhost:8888
       #      vault token
       token: myroot
-
-management:
-  endpoints:
-    web:
-      exposure:
-        # expose refresh endpoint from actuator
-        include: refresh

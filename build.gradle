@@ -21,6 +21,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+	implementation 'org.springframework.cloud:spring-cloud-starter-bus-kafka'
+	implementation 'org.springframework.cloud:spring-cloud-bus'
 	implementation 'org.springdoc:springdoc-openapi-ui:1.4.3'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
