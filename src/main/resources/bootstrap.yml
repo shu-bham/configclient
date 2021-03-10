@@ -5,13 +5,13 @@ spring:
     #   from git as well as vault
     #  1.) will fetch sample-service-dev.yml
     #  2.) will fetch from secret/sample-service
-    name: sample-service
+    name: ${APPLICATION_NAME:sample-service}
   #  optional
   profiles:
-    active: dev #dev/prod or default
+    active: ${APPLICATION_PROFILE:dev} #dev/prod or default
   cloud:
     config:
-      #      git uri
+      #      config Server
       uri: http://localhost:8888
       #      vault token
       token: myroot

@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8090-8095:8080"
+    environment:
+      - APPLICATION_NAME=sample-service
+      - APPLICATION_PROFILE=default
